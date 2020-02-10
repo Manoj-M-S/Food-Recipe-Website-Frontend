@@ -1,38 +1,11 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Open+Sans|Quicksand|Raleway|Source+Sans+Pro&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.container {background: rgb(38,121,213);
+  background: linear-gradient(90deg, rgba(38,121,213,1) 0%, rgba(69,239,252,1) 100%, rgba(253,29,29,1) 100%);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Quicksand;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav {
+  height:auto;
+  background-color: white;
 }
