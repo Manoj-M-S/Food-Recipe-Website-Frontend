@@ -19,7 +19,7 @@ export default class EditRecipe extends Component {
   
 
   componentDidMount() {
-    axios.get('http://localhost:5000/recipes/'+ this.props.match.params.id)
+    axios.get('https://cryptic-lake-04404.herokuapp.com/recipes/'+ this.props.match.params.id)
       .then(response => {
         this.setState({
           name: response.data.name,
