@@ -55,7 +55,6 @@ export default class EditRecipe extends Component {
     axios.patch('https://cryptic-lake-04404.herokuapp.com/recipes/' + this.props.match.params.id ,obj )
       .then(res => console.log(res.data));
       window.location = '/';
-      alert("Recipe Updated Successfully");
   }
 
     
