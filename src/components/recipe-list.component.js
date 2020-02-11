@@ -30,7 +30,7 @@ export default class RecipesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://cryptic-lake-04404.herokuapp.com/')
+    axios.get('https://cryptic-lake-04404.herokuapp.com/recipes')
       .then(res =>  {
         this.setState({ recipes: res.data });
         console.log(res.data)
@@ -44,7 +44,7 @@ export default class RecipesList extends Component {
   
 
   deleteRecipe(id) {
-    axios.delete('http://localhost:5000/recipes/'+id)
+    axios.delete('https://cryptic-lake-04404.herokuapp.com/recipes/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({

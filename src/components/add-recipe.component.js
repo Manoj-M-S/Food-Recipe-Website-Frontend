@@ -40,7 +40,7 @@ export default class AddRecipe extends Component {
             recipe: this.state.recipe,
             name: this.state.name
         }
-        axios.post('https://cryptic-lake-04404.herokuapp.com/', newRecipe)
+        axios.post('https://cryptic-lake-04404.herokuapp.com/recipes', newRecipe)
             .then(res => console.log(res.data));
 
         this.setState({

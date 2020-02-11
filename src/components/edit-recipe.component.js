@@ -19,7 +19,7 @@ export default class EditRecipe extends Component {
   
 
   componentDidMount() {
-    axios.get('https://cryptic-lake-04404.herokuapp.com/'+ this.props.match.params.id)
+    axios.get('https://cryptic-lake-04404.herokuapp.com/recipes/'+ this.props.match.params.id)
       .then(response => {
         this.setState({
           name: response.data.name,
@@ -52,7 +52,7 @@ export default class EditRecipe extends Component {
       recipe: this.state.recipe
     }
 
-    axios.patch('https://cryptic-lake-04404.herokuapp.com/' + this.props.match.params.id ,obj )
+    axios.patch('https://cryptic-lake-04404.herokuapp.com/recipes/' + this.props.match.params.id ,obj )
       .then(res => console.log(res.data));
       window.location = '/';
   }
