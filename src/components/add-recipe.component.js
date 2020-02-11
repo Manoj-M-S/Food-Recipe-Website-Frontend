@@ -40,14 +40,16 @@ export default class AddRecipe extends Component {
             recipe: this.state.recipe,
             name: this.state.name
         }
-        axios.post('https://cryptic-lake-04404.herokuapp.com/recipes/', newRecipe)
+        axios.post('https://cryptic-lake-04404.herokuapp.com/', newRecipe)
             .then(res => console.log(res.data));
 
         this.setState({
             recipe: '',
             name: ''
         })
+        alert("Recipe Added Successfully");
     }
+
     render() {
         return (
             <div style={{marginTop: 20}}>

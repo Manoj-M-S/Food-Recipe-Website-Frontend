@@ -9,7 +9,7 @@ const Recipe = props => (
   <div className="card-body">
       <h4><b>Recipe Name : </b>{props.recipe.name} </h4><br></br>
       <h4><b>Recipe : </b></h4> <h5> {props.recipe.recipe} </h5><br></br>
-      <button className="btn btn-light"><Link to={"/edit/"+props.recipe._id} >Edit</Link></button> | <button className= "btn btn-danger" onClick={() => {props.deleteRecipe(props.recipe._id) }}>delete</button> 
+      <button className="btn btn-light"><Link to={"/edit/"+props.recipe._id} >Edit</Link></button> | <button className= "btn btn-danger" onClick={() =>{if(window.confirm('Are You Sure ?')) {props.deleteRecipe(props.recipe._id) }}}>delete</button> 
   </div>
  </div>
  <div>
@@ -30,7 +30,7 @@ export default class RecipesList extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://cryptic-lake-04404.herokuapp.com/recipes/')
+    axios.get('https://cryptic-lake-04404.herokuapp.com/')
       .then(res =>  {
         this.setState({ recipes: res.data });
         console.log(res.data)
@@ -44,14 +44,14 @@ export default class RecipesList extends Component {
   
 
   deleteRecipe(id) {
-    alert("Are you sure")
-    axios.delete('https://cryptic-lake-04404.herokuapp.com/recipes/'+id)
+    axios.delete('http://localhost:5000/recipes/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
       recipes: this.state.recipes.filter(el => el._id !== id)
     })
   }
+
 
   recipeList() {
     return this.state.recipes.map(currentrecipe => {
