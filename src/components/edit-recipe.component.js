@@ -57,16 +57,13 @@ export default class EditRecipe extends Component {
       window.location = '/';
   }
 
-    
-  
-
   render() {
     return (
         <div>
         <h3>Update Recipe</h3>
         <form onSubmit={this.onSubmit}>
             <div className="form-group">
-                <label>Recipe Name: </label>
+                <label>Recipe Name : </label>
                 <input  type="text"
                         className="form-control"
                         value={this.state.name}
@@ -74,7 +71,7 @@ export default class EditRecipe extends Component {
                         />
             </div>
             <div className="form-group">
-                <label>Recipe: </label>
+                <label>Recipe : </label>
                 <input  type="text"
                         className="form-control"
                         value={this.state.recipe}
