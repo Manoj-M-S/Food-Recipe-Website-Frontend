@@ -55,12 +55,11 @@ export default class EditRecipe extends Component {
     axios.patch('https://cryptic-lake-04404.herokuapp.com/recipes/' + this.props.match.params.id ,obj )
       .then(res => console.log(res.data));
       window.location = '/';
+      alert("Recipe Updated Successfully");
   }
-  reload(){
+
     
-    window.location.reload();
-    alert("Recipe Updated Successfully")
-  }
+  
 
   render() {
     return (
@@ -84,7 +83,7 @@ export default class EditRecipe extends Component {
                         />
              </div>
             <div className="form-group">
-                    <input type="submit" value="Update Recipe" className="btn btn-success" onClick ={this.reload} />
+                    <input type="submit" value="Update Recipe" className="btn btn-success" />
             </div>
         </form>
         <br></br>
