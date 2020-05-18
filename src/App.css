@@ -1,11 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Open+Sans|Quicksand|Raleway|Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Open+Sans|Quicksand|Raleway|Source+Sans+Pro&display=swap");
 
-.container {background: rgb(38,121,213);
-  background: linear-gradient(90deg, rgba(38,121,213,1) 0%, rgba(69,239,252,1) 100%, rgba(253,29,29,1) 100%);
-
+body {
+  background-color: #707070;
+  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Quicksand;
+  font-size: medium;
 }
-#nav {
-  height:auto;
-  background-color: white;
+
+.nav :hover {
+  border-radius: 0px;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.815);
+  font-size: large;
+  opacity: 70%;
+}
+
+.jumbotron {
+  background: none;
+  padding-bottom: 5px;
+}
+
+footer {
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+  opacity: 95%;
+}
+
+footer p span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer .input-group .input-group-text {
+  background: linear-gradient(to bottom, #dd2476, #ff512f);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+nav .nav-item {
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(124, 124, 124, 0.2),
+    0 6px 20px 0 rgba(160, 160, 160, 0.19);
+  opacity: 88%;
+}
+
+.card:hover {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*opacity: 100%;*/
+}
+
+.lined-heading {
+  position: relative;
+  text-align: center;
+  display: block;
+  float: left;
+  width: 100%;
+  line-height: 35px;
+  color: rgb(63, 63, 63);
 }
