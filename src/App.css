@@ -16,9 +16,9 @@ body {
 }
 
 .navbar {
-  background: black;
+  background: rgba(0, 0, 0, 0.63);
   font-size: large;
-  opacity: 90% !important;
+  /* //opacity: 90% !important; */
 }
 
 .jumbotron {
@@ -27,10 +27,10 @@ body {
 }
 
 footer {
-  background-image: linear-gradient(to top, #accbee 0%, #f2f8ff 100%);
+  background-image: linear-gradient(to top, #accbee86 0%, #f2f8ffb2 100%);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
-  opacity: 90% !important;
+  /* opacity: 90% !important; */
 }
 
 footer p span {
@@ -62,7 +62,8 @@ nav .nav-item {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(124, 124, 124, 0.2),
     0 6px 20px 0 rgba(160, 160, 160, 0.19);
-  opacity: 93% !important;
+  /* opacity: 93% !important; */
+  background: #ffffff9f;
 }
 
 .card:hover {
