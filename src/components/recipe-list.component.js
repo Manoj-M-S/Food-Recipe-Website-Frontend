@@ -21,19 +21,25 @@ const Recipe = (props) => (
         </h4>
         <h5> {props.recipe.recipe} </h5>
         <br></br>
-        <button className="btn btn-light">
-          <Link to={"/edit/" + props.recipe._id}>Edit</Link>
-        </button>
-        <button
-          className="btn btn-danger"
-          onClick={() => {
-            if (window.confirm("Are You Sure ?")) {
-              props.deleteRecipe(props.recipe._id);
-            }
-          }}
-        >
-          delete
-        </button>
+        <div className="row">
+          <div className="col-10">
+            <button className="btn btn-light">
+              <Link to={"/edit/" + props.recipe._id}>Edit</Link>
+            </button>
+          </div>
+          <div className="col-2">
+            <button
+              className="btn btn-danger "
+              onClick={() => {
+                if (window.confirm("Are You Sure ?")) {
+                  props.deleteRecipe(props.recipe._id);
+                }
+              }}
+            >
+              delete
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div>

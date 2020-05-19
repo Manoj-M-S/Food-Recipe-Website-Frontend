@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Open+Sans|Quicksand|Raleway|Source+Sans+Pro&display=swap");
 
 body {
-  background-color: #1448a3;
+  background-color: #1f5ac0fa;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   /* background-size: cover;
@@ -14,7 +14,12 @@ body {
 .nav :hover {
   border-radius: 0px;
 }
-
+.row .edit {
+  align-content: left;
+}
+.row .delete {
+  align-content: right;
+}
 .navbar {
   background-image: linear-gradient(to top, #accbee9f 0%, #f2f8ff67 100%);
 
@@ -29,7 +34,7 @@ body {
 }
 
 footer {
-  background-image: linear-gradient(to top, #accbeede 0%, #f2f8ffd2 100%);
+  background-image: linear-gradient(to top, #accbeed7 0%, #ffffffa9 100%);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
   /* opacity: 90% !important; */
