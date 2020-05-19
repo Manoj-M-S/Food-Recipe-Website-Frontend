@@ -7,7 +7,7 @@ const Base = ({ title = "My title", className = " p-4", children }) => (
     <Menu />
     <div className="container-fluid">
       <div className="jumbotron  text-center">
-        <h1 className="display-4">{title}</h1>
+        <h1 className="display-4 text-white">{title}</h1>
       </div>
       <div className={className}>{children}</div>
     </div>

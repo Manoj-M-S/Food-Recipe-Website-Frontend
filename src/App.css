@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Open+Sans|Quicksand|Raleway|Source+Sans+Pro&display=swap");
 
 body {
-  background-color: #707070;
-  background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: #1448a3;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
   font-family: Quicksand;
   font-size: medium;
 }
@@ -16,8 +16,10 @@ body {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.63);
+  background-image: linear-gradient(to top, #accbee9f 0%, #f2f8ff67 100%);
+
   font-size: large;
+  font-weight: 500;
   /* //opacity: 90% !important; */
 }
 
@@ -27,7 +29,7 @@ body {
 }
 
 footer {
-  background-image: linear-gradient(to top, #accbee86 0%, #f2f8ffb2 100%);
+  background-image: linear-gradient(to top, #accbeede 0%, #f2f8ffd2 100%);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
   /* opacity: 90% !important; */
@@ -79,5 +81,5 @@ nav .nav-item {
   float: left;
   width: 100%;
   line-height: 35px;
-  color: rgb(63, 63, 63);
+  color: rgba(255, 255, 255, 0.849);
 }
