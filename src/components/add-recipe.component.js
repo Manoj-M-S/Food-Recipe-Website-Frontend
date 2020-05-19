@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Base from "./Base";
 import "../App.css";
+import { API } from "../Backend";
 
 export default class AddRecipe extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class AddRecipe extends Component {
       name: this.state.name,
     };
     axios
-      .post("https://cryptic-lake-04404.herokuapp.com/recipes", newRecipe)
+      .post(`${API}/recipes`, newRecipe)
       .then((res) => console.log(res.data));
 
     this.setState({

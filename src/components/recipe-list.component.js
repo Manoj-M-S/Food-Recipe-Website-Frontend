@@ -4,6 +4,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Base from "./Base";
 import "../App.css";
+import { API } from "../Backend";
 
 const Recipe = (props) => (
   <div>
@@ -50,7 +51,7 @@ export default class RecipesList extends Component {
 
   componentDidMount() {
     axios
-      .get("https://cryptic-lake-04404.herokuapp.com/recipes")
+      .get(`${API}/recipes`)
       .then((res) => {
         this.setState({ recipes: res.data });
         console.log(res.data);
@@ -61,11 +62,9 @@ export default class RecipesList extends Component {
   }
 
   deleteRecipe(id) {
-    axios
-      .delete("https://cryptic-lake-04404.herokuapp.com/recipes/" + id)
-      .then((response) => {
-        console.log(response.data);
-      });
+    axios.delete(`${API}/recipes/` + id).then((response) => {
+      console.log(response.data);
+    });
 
     this.setState({
       recipes: this.state.recipes.filter((el) => el._id !== id),

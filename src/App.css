@@ -2,7 +2,7 @@
 
 body {
   background-color: #707070;
-  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,9 +16,9 @@ body {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.815);
+  background: black;
   font-size: large;
-  opacity: 70%;
+  opacity: 90% !important;
 }
 
 .jumbotron {
@@ -27,11 +27,10 @@ body {
 }
 
 footer {
-  background: linear-gradient(to right, #d3cce3, #e9e4f0);
-
+  background-image: linear-gradient(to top, #accbee 0%, #f2f8ff 100%);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
-  opacity: 95%;
+  opacity: 90% !important;
 }
 
 footer p span {
@@ -63,7 +62,7 @@ nav .nav-item {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(124, 124, 124, 0.2),
     0 6px 20px 0 rgba(160, 160, 160, 0.19);
-  opacity: 88%;
+  opacity: 93% !important;
 }
 
 .card:hover {

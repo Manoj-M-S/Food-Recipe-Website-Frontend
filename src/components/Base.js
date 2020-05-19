@@ -7,9 +7,7 @@ const Base = ({ title = "My title", className = " p-4", children }) => (
     <Menu />
     <div className="container-fluid">
       <div className="jumbotron  text-center">
-        <h1 className="display-4">
-          <b>{title}</b>
-        </h1>
+        <h1 className="display-4">{title}</h1>
       </div>
       <div className={className}>{children}</div>
     </div>
@@ -20,9 +18,9 @@ const Base = ({ title = "My title", className = " p-4", children }) => (
             <h4>About Us</h4>
             <p className="text-muted">
               All Recipes appearing on this website is the property of Manoj M S
-              and is protected under India and International law. The artwork
+              and is protected under India and International law. The Recipes
               may not be reproduced, stored, or manipulated without the written
-              permission of the artist.
+              permission of the owner.
             </p>
             <p className="pt-4 text-muted">
               Copyright @2019 All rights reserved | This is made by

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Base from "./Base";
 import "../App.css";
+import { API } from "../Backend";
 
 export default class EditRecipe extends Component {
   constructor(props) {
@@ -19,10 +20,7 @@ export default class EditRecipe extends Component {
 
   componentDidMount() {
     axios
-      .get(
-        "https://cryptic-lake-04404.herokuapp.com/recipes/" +
-          this.props.match.params.id
-      )
+      .get(`${API}/recipes/` + this.props.match.params.id)
       .then((response) => {
         this.setState({
           name: response.data.name,
@@ -55,11 +53,7 @@ export default class EditRecipe extends Component {
     };
 
     axios
-      .patch(
-        "https://cryptic-lake-04404.herokuapp.com/recipes/" +
-          this.props.match.params.id,
-        obj
-      )
+      .put(`${API}/recipes/` + this.props.match.params.id, obj)
       .then((res) => console.log(res.data));
     window.location = "/";
   }
